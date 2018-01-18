@@ -1,0 +1,6 @@
+    imgSpan = new VerticalImageSpanextends(context, R.drawable.ziying);
+                String text = " " + data.getName();
+                SpannableString spannableString = new SpannableString(" " + text);//+ text
+                spannableString.setSpan(imgSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                pmop_list_name.setText(spannableString);
+                pmop_list_name.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
